@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<social-mapping>
+	<social
+		driver="Google"
+		register-as="user"
+		auto-register="true"
+		auth-id="524166599689-ba2lactnds8m4o7p2f483cf5a3kn74p0.apps.googleusercontent.com"
+		auth-secret="bG0YTQ2Vj1aJx4JW3nh7xrSx">
+		<attribute name="name" column="_name" />
+		<attribute name="email" column="_email" permission="email" />
+		<attribute name="locale" column="_language" />
+		<attribute name="birthday" column="birthdate" permission="user_birthday" />
+		<attribute name="gender" column="gender" />
+		<attribute name="picture" column="photo" />
+		<attribute name="link" column="url" />
+	</social>
+</social-mapping>

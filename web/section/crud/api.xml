@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api table="cms.crud" primary="id" code="code">
+	<field type="String" column="c_string" label="Tipo String" />
+	<field type="Boolean" column="c_boolean" label="Tipo Boolean" />
+	<field type="Date" column="c_date" label="Tipo Date" />
+	<field type="File" column="c_file" label="Tipo File" />
+	<field type="PlainText" column="c_text" label="Tipo Text" />
+	<field type="Color" column="c_color" label="Tipo Color" />
+	<field type="Cpf" column="c_cpf" label="Tipo CPF" />
+	<field type="Cnpj" column="c_cnpj" label="Tipo CNPJ" />
+	<field type="Enum" column="c_enum" label="Tipo Enumeration">
+		<item value="_A_" label="Item A" />
+		<item value="_B_" label="Item B" />
+		<item value="_C_" label="Item C" />
+		<item value="_D_" label="Item D" />
+		<item value="_E_" label="Item E" />
+		<item value="_F_" label="Item F" />
+	</field>
+	<field type="Fck" column="c_fck" label="Tipo FCK" />
+	<field type="Cep" column="c_cep" label="Tipo CEP" />
+	<field type="City" column="c_city" label="Tipo City" />
+	<field type="State" column="c_state" label="Tipo State" />
+	<field type="Select" column="c_select" label="Tipo Select" link-column="id" link-api="code" link-table="cms.select" link-view="title" />
+	<field type="Float" column="c_float" label="Tipo Float" />
+	<field type="Amount" column="c_integer" label="Tipo Integer" />
+	<field type="Date" column="_update" show-time="true" id="_API_UPDATE_UNIX_TIMESTAMP_" on-api-as="last_change" />
+</api>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form table="cms.select" primary="id">
+	<go-to flag="success" action="[same]" />
+	<go-to flag="fail" action="[same]" />
+	<field type="String" column="code" label="Código" read-only="true" />
+	<field type="String" column="title" label="Título" max-lenght="256" required="true" />
+	<field type="PlainText" column="description" label="Descrição" />
+</form>

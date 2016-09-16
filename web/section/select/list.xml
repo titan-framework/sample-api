@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="cms.select" primary="id">
+	<field type="String" column="code" label="Código" />
+	<field type="String" column="title" label="Título" />
+	<field type="Date" column="_update" label="Última Alteração" show-time="true" id="_UPDATE_" />
+	<order id="_UPDATE_" invert="true" />
+	<icon function="[ajax]" action="view" image="view.gif" label="Show | pt_BR: Visualizar | es_ES: Mostrar" default="true" />
+	<icon function="[ajax]" action="edit" image="edit.gif" label="Edit | pt_BR: Editar | es_ES: Editar" />
+	<icon action="delete" image="delete.gif" label="Delete | pt_BR: Apagar | es_ES: Eliminar" />
+</view>
+<search table="cms.select">
+</search>

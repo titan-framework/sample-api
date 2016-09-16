@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-mapping>
+	<application
+		name="mobile"
+		auth="APP|CLIENT-AS-USER"
+		token="mnOTyIPfrpkMh8w1qDFOl9VvHii4XoZedFUgTxrQqmB7zuPS6CXH1hKsz0ilGgdf"
+		request-timeout="36000"
+		protocol="Embrapa"
+		gcm-api-key="AIzaSyCuhmT4dJKnDi6Y5sTYkeUdbX3GInuSvuA"
+		send-alerts="true"
+	/>
+</api-mapping>

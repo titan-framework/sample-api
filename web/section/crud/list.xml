@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="cms.crud" primary="id" paginate="15">
+	<field type="String" column="c_string" label="Tipo String" max-lenght="256" />
+	<field type="Boolean" column="c_boolean" label="Tipo Boolean" />
+	<field type="Date" column="c_date" label="Tipo Date" />
+	<field type="Cpf" column="c_cpf" label="Tipo CPF" />
+	<field type="Cnpj" column="c_cnpj" label="Tipo CNPJ" />
+	<field type="Enum" column="c_enum" label="Tipo Enumeration">
+		<item value="_A_" label="Item A" />
+		<item value="_B_" label="Item B" />
+		<item value="_C_" label="Item C" />
+		<item value="_D_" label="Item D" />
+		<item value="_E_" label="Item E" />
+		<item value="_F_" label="Item F" />
+	</field>
+	<field type="Date" column="_update" label="Última Alteração" show-time="true" id="_UPDATE_" />
+	<field type="Date" column="_create" label="Criação" show-time="true" id="_CREATE_" />
+	<order id="_CREATE_" invert="true" />
+	<icon action="view" image="view.gif" label="Show | pt_BR: Visualizar | es_ES: Mostrar" default="true" />
+	<icon action="edit" image="edit.gif" label="Edit | pt_BR: Editar | es_ES: Editar" />
+	<icon action="delete" image="delete.gif" label="Delete | pt_BR: Apagar | es_ES: Eliminar" />
+	<icon action="version" label="Version Control | pt_BR: Controle de Versões | es_ES: El control de versiones" />
+</view>
+<search table="cms.crud">
+	<field type="String" column="c_string" label="Tipo String" max-lenght="256" />
+	<field type="Boolean" column="c_boolean" label="Tipo Boolean" />
+	<field type="Date" column="c_date" label="Tipo Date" />
+	<field type="String" column="c_text" label="Tipo Text" />
+	<field type="Cpf" column="c_cpf" label="Tipo CPF" />
+	<field type="Cnpj" column="c_cnpj" label="Tipo CNPJ" />
+	<field type="Enum" column="c_enum" label="Tipo Enumeration">
+		<item value="_A_" label="Item A" />
+		<item value="_B_" label="Item B" />
+		<item value="_C_" label="Item C" />
+		<item value="_D_" label="Item D" />
+		<item value="_E_" label="Item E" />
+		<item value="_F_" label="Item F" />
+	</field>
+	<field type="String" column="c_fck" label="Tipo FCK" />
+	<field type="Cep" column="c_cep" label="Tipo CEP" />
+	<field type="State" column="c_state" label="Tipo State" />
+	<field type="Select" column="c_select" label="Tipo Select" link-column="id" link-api="code" link-table="cms.select" link-view="title" />
+	<field type="Float" column="c_float" label="Tipo Float" />
+	<field type="Amount" column="c_integer" label="Tipo Integer" />
+</search>

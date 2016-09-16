@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-mapping>
+	<action
+		name="list"
+		label="Listar Itens"
+		default="true">
+		<menu action="create" />
+		<menu function="search" />
+		<menu action="graph" />
+		<menu action="csv" />
+		<menu function="rss" />
+	</action>
+	
+	<action
+		name="create"
+		label="Inserir Item">
+		<menu function="save" label="Criar Item" />
+		<menu action="list" image="close.png" label="Cancelar" />
+	</action>
+	
+	<action
+		name="edit"
+		label="Editar Item">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>
+	
+	<action
+		name="delete"
+		label="Apagar Item">
+		<menu function="delete" />
+		<menu action="list" image="close.png" />
+	</action>
+	
+	<action
+		name="view"
+		label="Visualizar Item"
+		description="">
+		<menu action="list" />
+		<menu function="print" />
+		<menu action="edit" />
+		<menu action="delete" />
+	</action>
+	
+	<action
+		name="graph"
+		label="Relatório Quantitativo">
+		<menu function="search" label="Filtrar" />
+		<menu action="list" />
+		<menu function="print" />
+	</action>
+	
+	<action
+		name="csv"
+		label="Export CSV | pt_BR: Exportar CSV | es_ES: Exportar CSV"
+		description="&lt;span style='color: #900; font-weight: bold;'&gt;Atenção!&lt;/span&gt; Selecione abaixo os campos que deseja que sejam exportados.">
+		<menu function="js" js="exportCsv ()" image="csv.png" label="Download CSV file | pt_BR: Fazer download do arquivo CSV | es_ES: Descargar archivo CSV" />
+		<menu action="list" />
+	</action>
+	
+	<action
+		name="version"
+		label="Version Control | pt_BR: Controle de Versões | es_ES: El control de versiones">
+		<menu function="search" />
+		<menu action="list" />
+	</action>
+</action-mapping>
