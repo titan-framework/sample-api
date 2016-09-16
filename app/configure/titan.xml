@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <titan-configuration
-	name="API REST-Like com Embrapa Auth"
+	name="API REST-Like com Embrapa-Auth"
 	description=""
 	url="http://localhost:8090/"
 	e-mail="camilo@carromeu.com"
@@ -13,41 +13,41 @@
 	language="pt_BR, en_US"
 	use-chat="false"
 	all-sections="true">
-	
+
 	<database
 		sgbd="PostgreSQL"
 		host="localhost"
-		name="api"
+		name="instance"
 		user="titan"
 		port="5432"
 		password=""
 		schema="titan"
 	/>
-	
-	<security 
+
+	<security
 		xml-path="configure/security.xml"
 		hash="1239adeac9127edcac77403bcec78581"
 		timeout="1800"
 	/>
-	
+
 	<search
 		hash="cd5f563f8a95029162934dfc50406d2a"
 		timeout="15552000"
 	/>
-	
-	<archive 
+
+	<archive
 		xml-path="configure/archive.xml"
 		data-path="file/"
 	/>
-	
-	<business-layer 
-		xml-path="configure/business.xml" 
+
+	<business-layer
+		xml-path="configure/business.xml"
 	/>
-	
+
 	<mail
 		xml-path="configure/mail.xml"
 	/>
-	
+
 	<version-control
 		schema="version"
 	/>
@@ -56,34 +56,34 @@
 		db-path="cache/log.db"
 		xml-path="configure/log.xml"
 	/>
-	
+
 	<social
 		xml-path="configure/social.xml"
 	/>
-	
+
 	<api
 		xml-path="configure/api.xml"
 	/>
-	
+
 	<mobile
 		label="Travel Titan&prime;s Sample App"
 		android="https://play.google.com/store/apps/details?id=com.carromeu.travel"
 	/>
-	
+
 	<alert
 		xml-path="configure/alert.xml"
 	/>
-	
+
 	<schedule
 		hash="ef48da1d06dfd23344c2a48829dee5c2"
 	/>
-	
+
 	<friendly-url
 		change-password="password"
 		disable-alerts="alert"
 		rss="rss"
 	/>
-	
+
 	<backup
 		path="backup/"
 		validity="86400"
